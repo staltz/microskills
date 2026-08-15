@@ -2,7 +2,7 @@
 
 Modular prompts I use every day. Compatible with [skills.sh](https://skills.sh) and any agent that reads `SKILL.md`.
 
-Most skills are too verbose. They pollute context with instructions the model already understands. Frontier models are good at paying attention to what you say, so it's sufficient to use few words. Plus, you can read these microskills yourself and know what they're doing.
+Most skills are too verbose. They pollute context with instructions the model already understands, and worse: they're written by agents and hardly reviewed by humans. Frontier models are good at paying attention to what you say, so it's sufficient to use few words. Plus, you can read these microskills yourself and know what they're doing.
 
 ## Install
 
