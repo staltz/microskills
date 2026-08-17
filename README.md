@@ -32,6 +32,32 @@ Prompt: `How do airplanes fly? /peep 100` (GPT-5.6 Sol High)
 
 As a counter example, the answer ChatGPT with Sol gave me for vanilla `How do airplanes fly?` had 340 words and a diagram. A bit too verbose in my opinion. You can choose how verbose you want the responses to be.
 
+❓ Isn't this the same as ASD-STE100?
+
+<details>
+<summary>Answer</summary>
+<p>
+ASD-STE100 is in my opinion inadequate for most cases, where you want the agent
+to speak like a normal person. In my experience, the output sometimes inserts actual technical specifications, focuses too much on requirements for no-ambiguity, and sounds simply too dry. Here are some examples:
+
+Prompt: `How do airplanes fly? ASD-STE100 in max 25 words` (GPT-5.6 Sol High)
+
+> Airplanes fly when air flows over the wings and makes lift. Engines give thrust. Controls change direction. Landing gear supports airplanes on the ground.
+
+Prompt: `How do airplanes fly? ASD-STE100 in max 100 words` (GPT-5.6 Sol High)
+
+> Airplanes fly because four forces act on them:
+>
+> - Engines move the airplane forward. This force is thrust.
+> - Air moves above and below the wings. This movement makes lift. Lift moves the airplane up.
+> - Gravity pulls the airplane down.
+> - Air resistance slows the airplane. This force is drag.
+>
+> The pilot changes engine power and the position of control surfaces. These surfaces change the direction and speed of the airplane. The landing gear supports the airplane on the ground.
+
+</p>
+</details>
+
 ### ✨ [debrief](skills/debrief/SKILL.md)
 
 Good for listing the decisions the agent made after an ambitious multi-million token session. Useful when reviewing a large agent PR: see the judgment calls first, then dive into the code.
